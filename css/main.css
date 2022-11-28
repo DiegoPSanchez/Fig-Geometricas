@@ -1,0 +1,116 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-align: center;
+    align-content: center;
+}
+/*  Encabezado
+
+
+
+
+
+===================*/
+
+.header{    
+
+    color: #fff;
+    border:20px;
+    padding: 25px;
+    border-radius: 5px;
+    background-color: #253062;
+    font-weight: normal;
+}
+
+p{
+    font-size: 20px;
+    font-weight: 700;
+    padding:20px;
+}
+
+.respuesta {
+ 
+    padding:25px;
+}
+.body {
+    align-content: center;
+    width: 100%;
+    overflow: hidden;
+    margin:auto; 
+    max-width:1200px;
+}
+.cont{
+    width: 31%;
+    height: auto;
+    border:4px solid #253062;
+    float: left;
+    margin:10px;
+    border-radius:10px;
+}
+
+h2{
+    color: #fff;
+    padding: 25px;
+    background-color: #253062;
+}
+
+input{
+    height:40px;
+    width: 220px;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    color:#253062;
+    border: solid;
+    border-radius: 5px;
+}
+
+button{
+    background-color: #253062;
+    color:#fff;
+    width:160px;
+    font-size: 18px;
+    padding: 10px;
+    margin: 20px;
+    border-style: none;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: #1b2558;
+    cursor:pointer;
+}
+
+button:active{
+    background-color: #4c5580;
+
+}
+
+/*------- Web Responsivo
+================================*/
+
+@media only screen and (max-width: 1100px) {
+    /* For mobile phones: */
+    .body {
+        max-width:780px;
+       
+    }
+    .cont{
+        width: 45%;
+        margin: 17px;
+    }
+}
+@media only screen and (max-width: 700px) {
+    /* For mobile phones: */
+    .body {
+        max-width:320px;
+    }
+    .cont{
+        width: 90%;
+        margin: 10px;
+    }
+}

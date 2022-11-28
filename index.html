@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras Geometricas</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!--  Encabezado  -->
+
+    <header class="header">
+        <h1>FIGURAS GEOMETRICAS</h1>
+        <p>Calcular diferentes medidas de figuras Geometricas como Area y perimetro.</p>
+    </header>
+    <!--   Respuesta  -->
+    <div class="respuesta">
+        <p id="result">Resultado de la operacíon</p>
+    </div>
+    <div class="body">
+        <div class="cont">
+            <div>
+                <h2>Cuadrado</h2>
+
+            </div>
+            <div>
+                <p>¿Cuanto mide cada lado de tu cuadrado?</p>
+                <input type="number" name="imputSide" id="imputSide" placeholder="Ingrese el valor del lado">
+                <button type="button" onclick="calculatePerimSquare()">Perimetro</button>
+                <button type="button" onclick="calculateAreaSquare()">Area</button>
+            </div>
+        </div>
+    
+        <div class="cont">
+            <div>
+                <h2>Triangulo</h2>
+
+            </div>
+            <div>
+                <p>¿Cuanto mide cada lado de tu triangulo?</p>
+                <input type="number" name="sideA" id="sideA" placeholder="Ingrese el primer lado">
+                <input type="number" name="sideB" id="sideB" placeholder="Ingrese el segundo lado">
+                <input type="number" name="sideC" id="sideC" placeholder="Ingrese el tercer lado">
+                <button type="button" onclick="calculatePerimTriang()">Perimetro</button>
+                <p>¿Cuanto mide la base y altura de tu triangulo?</p>
+                <input type="number" name="Base" id="Base" placeholder="Ingrese el valor de la base">
+                <input type="number" name="Altura" id="Altura" placeholder="Ingrese el valor de la altura">
+                <button type="button" onclick="calculateAreaTriang()">Area</button>
+            </div>
+        </div>
+
+        <div class="cont">
+            <div>
+                <h2>Circulo</h2>
+
+            </div>
+            <div>
+                <p>¿Cuanto mide el radio de tu circulo?</p>
+                <input type="number" name="imputRad" id="imputRad" placeholder="Ingrese el valor del radio">
+                <button type="button" onclick="calculateDiamCirc()">Diametro</button>
+                <button type="button" onclick="calculatePerimCirc()">Perimetro</button>
+                <button type="button" onclick="calculateAreaCirc()">Area</button>
+            </div>
+        </div>
+
+    </div>
+    <script src="js/geometric.js"></script>
+</body>
+</html>
